@@ -1,20 +1,39 @@
-
+// a mobile first approach.
 
 .container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 0 0;
-    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
-@for $i from 1 through 12 {
-    $width: percentage(1 / 12);
-    .col-#{$i} {
-        width: $width * $i;
-        display: inline-block;
-        box-sizing: border-box;
-        border: 1px solid black;
+[class*="col-"] {
+    width: 100%;
+    border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+     /* For desktop: */
+    .container {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        max-width: 960px;
+        margin: 0 auto;
     }
+    @for $i from 1 through 12 {
+        $width: percentage(1 / 12);
+        .col-#{$i} {
+            width: $width * $i;
+            box-sizing: border-box;
+            
+        }
+    }
+}
+
+.center {
+    text-align: center;
 }

@@ -2,8 +2,10 @@ var app = document.getElementById("app");
 for (var i = 1; i < 12; i++){
     let container = document.createElement("div");
     container.className = "container";
+    container.classList.add("center");
     let inner1 = document.createElement("div");
     inner1.className = "col-" + i;
+    inner1.classList.add("bg-aqua");
     inner1.innerHTML = i;
     let inner2 = document.createElement("div");
     inner2.className = "col-" + (12 - i);
