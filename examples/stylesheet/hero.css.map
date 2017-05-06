@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACF,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,IAAI",
+"sources": ["../../src/hero.scss"],
+"names": [],
+"file": "hero.css"
+}

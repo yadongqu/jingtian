@@ -639,4 +639,16 @@ blockquote:before {
 blockquote p {
   display: inline; }
 
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.hero {
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  padding: 50px; }
+
 /*# sourceMappingURL=jingtian.css.map */
