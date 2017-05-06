@@ -1,0 +1,13 @@
+{
+  "name": "jingtian",
+  "version": "1.0.0",
+  "main": " ",
+  "license": "MIT",
+  "description": "a minimal css framework",
+  "author": "Aaron Qu",
+  "scripts": {
+    "build": "sass ./src/jingtian.scss ./dist/jingtian.css",
+    "watch": "sass --watch ./src:examples/stylesheet",
+    "serve": "cd examples && live-server"
+  }
+}
