@@ -1,6 +1,6 @@
 .button {
     outline: 0;
-    padding: 0.5em 0.5em;
+    padding: 0.5em 1em;
     vertical-align: center;
     text-align: center;
     border: none;
@@ -9,15 +9,11 @@
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
+
 }
 
 .button:hover {
     box-shadow: 4px 4px 10px #888888;
-}
-
-.button-block {
-    @extend .button;
-    width: 100%;
 }
 
 

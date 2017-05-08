@@ -1,0 +1,15 @@
+@import "./utils/_variables";
+
+@each $name, $value in $colors{
+    @for $i from 1 through 4 {
+       .border-#{$name}-#{$i} {
+          border: 1px solid $value;
+        }
+
+    }
+}
+
+// // .border-circle {
+// //     @extend .border;
+// //     border-radius: 5px 5px;
+// }
